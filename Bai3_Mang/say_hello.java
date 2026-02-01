@@ -1,4 +1,4 @@
-
+package Bai3_Mang;
 import java.util.Scanner;
 
 public class say_hello {
