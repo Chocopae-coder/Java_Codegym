@@ -60,7 +60,7 @@ public class Menu {
 
             System.out.println(list.get(i));
 
-            if ((i + 1) % 5 == 0) {
+            if ((i + 1) % 10 == 0) {
                 System.out.println("Nhấn Enter để xem tiếp...");
                 scanner.nextLine();
             }
@@ -150,7 +150,7 @@ public class Menu {
 
         if (c.equalsIgnoreCase("Y")) {
 
-            List<Contact> list = CSVUtil.read("data/contacts.csv");
+            List<Contact> list = CSVUtil.read("E:\\Java\\Contact_Manager\\contacts.csv");
 
             service.getContacts().clear();
             service.getContacts().addAll(list);
@@ -164,7 +164,7 @@ public class Menu {
 
         if (c.equalsIgnoreCase("Y")) {
 
-        CSVUtil.write("data/contacts.csv", service.getContacts());
+        CSVUtil.write("E:\\Java\\Contact_Manager\\contacts.csv", service.getContacts());
         }
     }
     private static void update() {
